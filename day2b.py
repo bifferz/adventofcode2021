@@ -13,7 +13,6 @@ aim = 0
 
 for i in readings:
     for j, k in (list(i.split(" ")),):
-        print(j, k)
         if j == 'forward':
             if aim == 0:
                 horizontal += int(k)
@@ -25,5 +24,4 @@ for i in readings:
         if j == 'up':
             aim = aim - int(k)
         
-print(horizontal, depth)
 print(horizontal*depth)
